@@ -24,61 +24,7 @@
 // const secondArray = new twoDimensionalArray(0, 8);
 // const testArr = secondArray.getArray();
 
-//  mine code (error)
-function Find(target, array, lastCenterIndex = 0, flag = '') {
-    let center;
-    if (!flag) {
-        // special
-        if (array.length === 0) return false;
-        if (array.length === 1) {
-            return array[0][0] === target;
-        }
-        if (array[array.length - 1][array.length - 1] < target) return false;
-        if (array[0][0] > target) return false;
-        // start
-        center = Math.floor((array.length - 1) / 2);
-    } else if (flag === '<') {
-        center = Math.floor(lastCenterIndex + (array.length - 1) / 2);
-    } else if (flag === '>') {
-        center = Math.floor(lastCenterIndex / 2);
-    }
-    if (array[center].length === 0 || !array[center][center]) return false;
-    if (array[center][center] > target) {
-        if (flag === '<') {
-            const min = lastCenterIndex,
-                max = center;
-
-            for (let x = min; x < max; x++) {
-                for (let y = min; y < max; y++) {
-                    if (array[x][y] === target) return true;
-                }
-            }
-            return false;
-        }
-        return Find(target, array, center, '>');
-    } else if (array[center][center] < target) {
-        if (flag === '>') {
-            const min = center,
-                max = lastCenterIndex;
-
-            for (let x = min; x < max; x++) {
-                for (let y = min; y < max; y++) {
-                    if (array[x][y] === target) return true;
-                }
-            }
-            return false;
-        }
-        return Find(target, array, center, '<')
-    } else {
-        return true;
-    }
-};
-
-Find(1, [
-    [-5]
-])
-
-// example from https://www.cnblogs.com/wuguanglin/p/2dArrayFind.html
+// code from https://www.cnblogs.com/wuguanglin/p/2dArrayFind.html
 function Find(target, array) {
     // write code here
     const n = array.length,
