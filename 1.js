@@ -26,7 +26,6 @@
 
 // code from https://www.cnblogs.com/wuguanglin/p/2dArrayFind.html
 function Find(target, array) {
-    // write code here
     const n = array.length,
         m = array[0].length;
     let row = n - 1,
@@ -43,3 +42,7 @@ function Find(target, array) {
     }
     return false;
 }
+
+// first, Get value on Array[array.length - 1][0]
+// second, if value > target row-- else value < target col++
+// third, repeat second
