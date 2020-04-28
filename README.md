@@ -6,3 +6,5 @@ Start to learn and open your mind on Algorithm training!
 [1] Query on the two-dimensional array.
 [2] Reverse output a link
 [3] Rebuild binary-tree
+[4] Build a queue by two stack
+[5] Reverse a array
