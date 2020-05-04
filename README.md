@@ -10,3 +10,6 @@ Start to learn and open your mind on Algorithm training!
 [5] Reverse a array
 [6] Fibonacci
 [7] find 1 from a Interger
+[8] a to the power of n
+[9] split odd and even number and keep the relative position
+[10] N-to-last node on the linked list

@@ -24,8 +24,7 @@ function findMinFormReverseArray(arr) {
 
     // O(logn)
     while(right - left > 1) {
-        let mid = left + (right - left) >> 1;
-        left = left + (right - left >> 1);
+        let mid = left + (right - left) >> 1; // 除以2取小的那个数
         
         if (arr[mid] > arr[right]) {
             left = mid;
