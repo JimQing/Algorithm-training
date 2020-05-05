@@ -4,10 +4,10 @@
 function findKthToTail(head, k) {
     let left = head, right = head;
 
-    if (!head && k < 0) return null;
+    if (!head || k <= 0) return null;
     while(--k) {
+        if (!right.next) return null;
         right = right.next;
-        if (!head.next && k > 0) return false
     }
     while(!right.next) {
         left = left.next;

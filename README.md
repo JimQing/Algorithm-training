@@ -13,3 +13,6 @@ Start to learn and open your mind on Algorithm training!
 [8] a to the power of n
 [9] split odd and even number and keep the relative position
 [10] N-to-last node on the linked list
+[11] Reverse a the linked list
+[12] Compose tow linked lists with different order
+[13] Tree substructure
