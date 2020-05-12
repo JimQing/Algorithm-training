@@ -16,3 +16,6 @@ Start to learn and open your mind on Algorithm training!
 [11] Reverse a the linked list
 [12] Compose tow linked lists with different order
 [13] Tree substructure
+[14] Reverse a tree
+[15] Push a list from an array by clockwise
+[16] The stack containing the find-min function
