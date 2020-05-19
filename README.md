@@ -19,3 +19,5 @@ Start to learn and open your mind on Algorithm training!
 [14] Reverse a tree
 [15] Push a list from an array by clockwise
 [16] The stack containing the find-min function
+[17] Determine whether the sequence is the pop sequence of the stack
+[18] Print a binary tree from top to bottom
