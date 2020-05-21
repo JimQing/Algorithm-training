@@ -21,3 +21,4 @@ Start to learn and open your mind on Algorithm training!
 [16] The stack containing the find-min function
 [17] Determine whether the sequence is the pop sequence of the stack
 [18] Print a binary tree from top to bottom
+[19] Determine whether an array is a subsequent traversal of a binary search tree
