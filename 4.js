@@ -9,7 +9,6 @@ class Queue {
     }
     push(val) {
         this._inStack.push(val);
-        console.log(this._inStack);
     }
     pop() {
         if (this._outStack.length === 0) {
@@ -26,6 +25,8 @@ q.push(2);
 q.push(3);
 q.push(4);
 q.push(5);
+q.pop();
+q.push(6);
 q.pop();
 
 
