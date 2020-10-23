@@ -26,3 +26,13 @@ function Mirror(root) {
     Mirror(root.left)
     Mirror(root.right)
 }
+
+function Mirror2(root) {
+    if (!root) return null;
+    
+    return {
+        val: root.val,
+        left: Mirror(root.right),
+        right: Mirror(root.left)
+    }
+}
