@@ -24,3 +24,5 @@ Start to learn and open your mind on Algorithm training!
 - [19] Determine whether an array is a subsequent traversal of a binary search tree
 - [20] Roman to Integer
 - [21] Longest Palindromic substring
+- [22] Palindrome linked list
+- [23] Search the path which the sum of node values in a binary tree
