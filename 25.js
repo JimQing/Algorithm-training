@@ -12,6 +12,36 @@
  * @return {Node}
  */
 var treeToDoublyList = function(root) {
+    var prev, head;
+    var getList = function(root) {
+        if (!root) return null;
+        dfs(root)
+        head.left = prev;
+        prev.right = head;
+
+        return head;
+    };
+
+    var dfs = function(pNode) {
+        if (!pNode) return;
+
+        dfs(pNode.left)
+        if (prev) {
+            prev.right = pNode;
+        } else {
+            head = pNode;
+        }
+        pNode.left = prev;
+        prev = pNode;
+        dfs(pNode.right)
+    }
+
+    return getList(root);
+}
+
+
+// other version
+var treeToDoublyList2 = function(root) {
     if (!root) return null;
 
     let pLast = null;
@@ -44,33 +74,4 @@ var ConverNode = function(pNode, pLast) {
     }
 
     return pLast;
-}
-
-// other version
-var treeToDoublyList2 = function(root) {
-    var prev, head;
-    var getList = function(root) {
-        if (!root) return null;
-        dfs(root)
-        head.left = prev;
-        prev.right = head;
-
-        return head;
-    };
-
-    var dfs = function(pNode) {
-        if (!pNode) return;
-
-        dfs(pNode.left)
-        if (prev) {
-            prev.right = pNode;
-        } else {
-            head = pNode;
-        }
-        pNode.left = prev;
-        prev = pNode;
-        dfs(pNode.right)
-    }
-
-    return getList(root);
 }
