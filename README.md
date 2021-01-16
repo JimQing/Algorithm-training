@@ -29,3 +29,4 @@ Start to learn and open your mind on Algorithm training!
 - [24] Copy of complex linked list
 - [25] Convert the binary search tree into a sorted circular doubly linked list
 - [26] All arrangements of strings
+- [27] Find the number that occurs more than half the time in the array
