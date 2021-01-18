@@ -8,17 +8,19 @@
  * 5. 将temp置为左右子树的根节点，回到1，继续执行
  */
 
-function VerifySquenceOfBST(arr) {
-    if(!arr.length) return false;
-    return varifyFn(arr, 0, arr.length-1) 
-}
+var verifyPostorder = function(postorder) {
+    if (!postorder.length) return true;
+
+    return varifyFn(postorder, 0, postorder.length-1) 
+};
+
 function varifyFn(a, l, r) {
     if (l >= r) return true; // search end
     let i = r;
     // Get Index of the right child-tree;
-    while (a[i-1] > a[r] && i > 1) i--;
-    for (let j = i-1; j >= 1; j--) {
+    while (a[i-1] > a[r] && i > l) i--;
+    for (let j = i-1; j >= l; j--) {
         if (a[j] > a[r]) return false; 
     }
-    return varifyFn(a, 0, i - 1) && varifyFn(a, i, r);
+    return varifyFn(a, l, i - 1) && varifyFn(a, i, r - 1);
 }
