@@ -30,3 +30,5 @@ Start to learn and open your mind on Algorithm training!
 - [25] Convert the binary search tree into a sorted circular doubly linked list
 - [26] All arrangements of strings
 - [27] Find the number that occurs more than half the time in the array
+- [28] Get the smallest k-th number in the array
+- [29] Maximum sum of consecutive subarrays
