@@ -32,3 +32,5 @@ Start to learn and open your mind on Algorithm training!
 - [27] Find the number that occurs more than half the time in the array
 - [28] Get the smallest k-th number in the array
 - [29] Maximum sum of consecutive subarrays
+- [30] Number of occurrences of 1 in an integer from 1 to n
+- [31] Arrange the array into the smallest number
