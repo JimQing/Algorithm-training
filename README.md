@@ -34,3 +34,7 @@ Start to learn and open your mind on Algorithm training!
 - [29] Maximum sum of consecutive subarrays
 - [30] Number of occurrences of 1 in an integer from 1 to n
 - [31] Arrange the array into the smallest number
+- [32] Ugly number
+- [33] Find the first character that appears only once in the string s. If not, return a single space. s contains only lowercase letters.
+- [34] Find the same node in two linked lists
+- [35] Count the number of times that a number appears in the sorted array
